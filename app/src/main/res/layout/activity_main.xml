@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/llMain"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="@string/hint_wt"
+        android:id="@+id/editWeight"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:inputType="number"
+        android:hint="@string/hint_htF"
+        android:id="@+id/editHeight"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:id="@+id/editHeightIn"
+        android:inputType="number"
+        android:hint="@string/hint_htI"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E6D4EA"
+        android:textSize="28sp"
+        android:id="@+id/btnCaculate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResult"
+        android:text="Result"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="11dp"
+
+        />
+
+</LinearLayout>
